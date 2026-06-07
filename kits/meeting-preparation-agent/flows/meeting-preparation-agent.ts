@@ -43,74 +43,31 @@ export const references = {
 // -- Nodes & Edges --
 export const nodes = [
   {
-    "id": "sticky-note-391",
-    "type": "stickyNoteNode",
-    "position": {
-      "x": 0,
-      "y": 0
-    },
-    "data": {
-      "nodeId": "stickyNoteNode",
-      "values": {
-        "text": "",
-        "color": "blue",
-        "nodeId": "stickyNoteNode",
-        "nodeName": "Sticky Note",
-        "nodeType": "stickyNoteNode"
-      }
-    }
-  },
-  {
-    "id": "sticky-note-724",
-    "type": "stickyNoteNode",
-    "position": {
-      "x": 0,
-      "y": 0
-    },
-    "data": {
-      "nodeId": "stickyNoteNode",
-      "values": {
-        "text": "",
-        "color": "blue",
-        "nodeId": "stickyNoteNode",
-        "nodeName": "Sticky Note",
-        "nodeType": "stickyNoteNode"
-      }
-    }
-  },
-  {
     "id": "triggerNode_1",
     "type": "triggerNode",
-    "position": {
-      "x": 0,
-      "y": 0
-    },
+    "position": { "x": 0, "y": 0 },
     "data": {
       "nodeId": "askTriggerNode",
       "trigger": true,
       "values": {
         "chat": "",
-        "domains": [
-          "*"
-        ],
+        "domains": ["*"],
         "nodeName": "Ask Trigger",
         "askConfig": {
           "policyUrl": "https://lamatic.ai/docs/legal/privacy-policy",
           "suggestions": [
-            "How do I get started with Lamatic.ai?",
-            "How do I create my first AI flow?",
-            "How do I use the Studio interface?",
-            "How do I use the VectorDB feature?",
-            "How do I add custom context to my agents?",
-            "How do I integrate with external APIs?"
+            "Prepare me for a Google Backend Developer interview",
+            "Help me prepare for a Data Scientist role at Amazon",
+            "I have an interview at a startup for a Frontend Engineer position",
+            "Prepare me for a Product Manager interview at Microsoft"
           ],
           "errorMessage": "Oops! Something went wrong. Please try again.",
           "hideBranding": false,
           "primaryColor": "#ef4444",
           "showCopyButton": true,
           "showNavHelperText": true,
-          "initialPlaceholder": "Ask your message",
-          "followUpPlaceholder": "Follow up on your message",
+          "initialPlaceholder": "Enter company and role (e.g. Google, Backend Developer Intern)",
+          "followUpPlaceholder": "Ask a follow up question",
           "showFeedbackButtons": true,
           "showEscapeHelperText": true
         }
@@ -120,10 +77,7 @@ export const nodes = [
   {
     "id": "LLMNode_300",
     "type": "dynamicNode",
-    "position": {
-      "x": 0,
-      "y": 0
-    },
+    "position": { "x": 0, "y": 0 },
     "data": {
       "nodeId": "LLMNode",
       "values": {
@@ -152,10 +106,7 @@ export const nodes = [
   {
     "id": "responseNode_triggerNode_1",
     "type": "responseNode",
-    "position": {
-      "x": 0,
-      "y": 0
-    },
+    "position": { "x": 0, "y": 0 },
     "data": {
       "nodeId": "askResponseNode",
       "values": {
